@@ -4,7 +4,7 @@
   Yangzhi Ma · Bojun Liu · Wenting Liao · Dong Liu · Zhu Li · Li Li
 </p>
 
-<h4 align="center">IEEE TCSVT 2026</h4>
+<h3 align="center">IEEE TCSVT 2026</h3>
 
 <h4 align="center"><a href="https://ieeexplore.ieee.org/abstract/document/11789675">Paper</a></h4>
 
@@ -56,10 +56,19 @@ The CUDA extensions are compiled during installation. LPIPS evaluation downloads
 
 Configurations are provided for **[MeetRoom](https://github.com/AlgoHunt/StreamRF)** and **[N3DV](https://github.com/facebookresearch/Neural_3D_Video)**:
 
-| Dataset | Scene names | Image directory | Example frame range |
+| Dataset | Scene | Image resolution (W × H) | Example frame range |
 | --- | --- | --- | --- |
-| MeetRoom | `discussion`, `trimming`, `vrheadset` | `images` | 0–299 |
-| N3DV | `coffee_martini`, `cook_spinach`, `cut_roasted_beef`, `flame_salmon_1`, `flame_steak`, `sear_steak` | `images_2` | 0–299 |
+| MeetRoom | `discussion` | 1220 × 682 | 0–299 |
+| MeetRoom | `trimming` | 1222 × 684 | 0–299 |
+| MeetRoom | `vrheadset` | 1223 × 685 | 0–299 |
+| N3DV | `coffee_martini` | 1341 × 1005 | 0–299 |
+| N3DV | `cook_spinach` | 1344 × 1007 | 0–299 |
+| N3DV | `cut_roasted_beef` | 1342 × 1006 | 0–299 |
+| N3DV | `flame_salmon_1` | 1344 × 1008 | 0–299 |
+| N3DV | `flame_steak` | 1340 × 1006 | 0–299 |
+| N3DV | `sear_steak` | 1343 × 1007 | 0–299 |
+
+Resolutions refer to the held-out test view. Training views in `flame_steak` have slightly different resolutions after undistortion.
 
 Each scene has a configuration at `configs/<dataset>/<scene>/<scene>.json`. Prepare undistorted multi-view images and COLMAP camera data for each frame:
 
@@ -82,7 +91,7 @@ data/
         └── ...
 ```
 
-The `sparse/0/` directory contains COLMAP intrinsics, extrinsics, and point-cloud files. Frame 0 supplies the point cloud used to initialize the Gaussian scene. Keep camera names consistent across time and preserve each configuration's image resolution and train/test split. Data preprocessing is not included.
+The `sparse/0/` directory contains COLMAP intrinsics, extrinsics, and point-cloud files. Frame 0 supplies the point cloud used to initialize the Gaussian scene. Keep camera names consistent across time and preserve each configuration's image resolution and train/test split.
 
 ## Training
 

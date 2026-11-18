@@ -203,5 +203,5 @@ If you find this work useful for your research, please consider citing us:
 
 ## Acknowledgements
 
-This work builds upon [3D Gaussian Splatting (3DGS)](https://github.com/graphdeco-inria/gaussian-splatting), [Scaffold-GS](https://github.com/city-super/Scaffold-GS), [HAC](https://github.com/YihangChen-ee/HAC), and [iFVC](https://github.com/Pomelomm/iFVC). We sincerely thank the authors for their excellent work and for making their code publicly available. 
+This work builds upon [3DGS](https://github.com/graphdeco-inria/gaussian-splatting), [Scaffold-GS](https://github.com/city-super/Scaffold-GS), [HAC](https://github.com/YihangChen-ee/HAC), [ContextGS](https://github.com/wyf0912/ContextGS), and [iFVC](https://github.com/Pomelomm/iFVC). We sincerely thank the authors for their excellent work and for making their code publicly available.
 

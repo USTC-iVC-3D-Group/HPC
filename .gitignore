@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+outputs/
+data/
+*.egg-info/
+build/
+.pytest_cache/
+submodules/gridencoder/
+submodules/simple-knn/
+submodules/diff-gaussian-rasterization/

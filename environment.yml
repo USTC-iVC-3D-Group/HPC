@@ -1,0 +1,19 @@
+name: hpc
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pytorch=1.12.1
+  - torchvision=0.13.1
+  - cudatoolkit=11.6
+  - pip
+  - ninja
+  - pip:
+      - numpy==1.24.4
+      - einops==0.8.1
+      - plyfile==1.0.3
+      - torchac==0.9.3
+      - Pillow==10.4.0
+      - tqdm==4.67.3

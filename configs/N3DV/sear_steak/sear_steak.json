@@ -1,0 +1,62 @@
+{
+    "scene": "sear_steak",
+    "base_source_path": "data/N3DV",
+    "base_model_path": "outputs",
+    "lmbda": 0.004,
+    "P_lmbda": 0.01,
+    "frame_start": 0,
+    "frame_end": 249,
+    "model_params": {
+        "sh_degree": 3,
+        "feat_dim": 50,
+        "n_offsets": 10,
+        "voxel_size": 0.001,
+        "update_depth": 3,
+        "update_init_factor": 16,
+        "update_hierachy_factor": 4,
+        "source_path": "",
+        "model_path": "",
+        "images": "images_2",
+        "resolution": 1,
+        "white_background": false,
+        "llffhold": -1,
+        "enable_filter": true,
+        "data_device": "cuda",
+        "eval": true,
+        "lod": 0,
+        "ref_path": "",
+        "ref_iter": -1
+    },
+    "Init_frame_params": {
+        "iterations": 15000,
+        "test_iterations": [
+            15000
+        ],
+        "save_iterations": [
+            15000
+        ],
+        "start_stat": 500,
+        "update_from": 1500,
+        "update_interval": 100,
+        "update_until": 5000,
+        "step_flag1": 1000,
+        "step_flag2": 3000
+    },
+    "P_frame_params": {
+        "iterations": 500,
+        "first_ref_iteration": 15000,
+        "ref_iter": 500,
+        "test_iterations": [
+            500
+        ],
+        "save_iterations": [
+            500
+        ],
+        "hpc_cfg": {
+            "use_hierachical_latent": true,
+            "level_num": 3,
+            "target_ratio": 0.2,
+            "n_features_ttl": 48
+        }
+    }
+}

@@ -56,10 +56,10 @@ The CUDA extensions are compiled during installation. LPIPS evaluation downloads
 
 Configurations are provided for **[MeetRoom](https://github.com/AlgoHunt/StreamRF)** and **[N3DV](https://github.com/facebookresearch/Neural_3D_Video)**:
 
-| Dataset | Scene names | Original image resolution (W × H) | Example frame range |
+| Dataset | Scene names | Image resolution (W × H) | Example frame range |
 | --- | --- | --- | --- |
 | MeetRoom | `discussion`, `trimming`, `vrheadset` | 1280 × 720 | 0–299 |
-| N3DV | `coffee_martini`, `cook_spinach`, `cut_roasted_beef`, `flame_salmon_1`, `flame_steak`, `sear_steak` | 2704 × 2028 | 0–299 |
+| N3DV | `coffee_martini`, `cook_spinach`, `cut_roasted_beef`, `flame_salmon_1`, `flame_steak`, `sear_steak` | 1352 × 1014 | 0–299 |
 
 Each scene has a configuration at `configs/<dataset>/<scene>/<scene>.json`. Prepare undistorted multi-view images and COLMAP camera data for each frame:
 
